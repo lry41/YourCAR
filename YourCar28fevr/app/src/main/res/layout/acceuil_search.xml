@@ -48,9 +48,9 @@
         android:layout_marginTop="20dip" >
 
         <SearchView
-            android:layout_width="300dp"
-            android:background="@drawable/search_view"
+            android:layout_width="289dp"
             android:layout_height="50dp"
+            android:background="@drawable/search_view"
 
             />
 
@@ -89,22 +89,22 @@
     </TableRow>
 
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
 
-        android:divider="@android:color/transparent"
-        android:dividerHeight="20.0sp"
         android:id="@+id/maliste"
         android:layout_width="match_parent"
-        android:layout_height="440dp"
+        android:layout_height="436dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="40.0sp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
 
-    </ListView>
+    </androidx.recyclerview.widget.RecyclerView>
 
   <!--  <fragment
         android:layout_marginTop="40dp"
         android:id="@+id/fragment_main"
-        android:name="com.example.yourcar.MainActivity"
+        android:name="com.example.yourcar.SearchCarController"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         tools:ignore="Instantiatable" />-->

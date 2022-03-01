@@ -9,8 +9,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="413dp"
-        android:layout_height="00dp"
-
+        android:layout_height="match_parent"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -18,16 +17,16 @@
     </View>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="YourCAR"
         android:textColor="@color/white"
         android:textSize="40sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="55dp">
-
-    </TextView>
+        app:layout_constraintBottom_toTopOf="@+id/imgCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/imgCar"
@@ -38,9 +37,8 @@
         android:src="@drawable/home3"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.401"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.577"
+        tools:layout_editor_absoluteX="2dp" />
 
     <TextView
 
@@ -49,29 +47,13 @@
         android:text="Buy or Sell safely."
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="342dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.63"
+        tools:ignore="MissingConstraints"/>
 
-    </TextView>
-
-    <Button
-        android:layout_width="109dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#03a9f4"
-        android:text="Connexion"
-        android:textSize="10sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="561dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#03a9f4"
-        android:text=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="561dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
