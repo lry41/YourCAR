@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">YourCar</string>
-    <string name="yourcar">YourCAR</string>
-    <string name="voiture_disponible">Voiture disponible :</string>
-    <string name="details">Détails</string>
-</resources>
