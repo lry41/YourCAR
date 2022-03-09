@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        >
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="@string/app_name"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imguser"
+            android:src="@drawable/user"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="460dp"
+            android:contentDescription="account"><!--optimisiable-->
+
+
+        </ImageView>
+
+
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <Button
+
+            android:layout_span="1"
+            android:text="Filtres">
+
+        </Button>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_span="1"
+            android:text="@string/voiture_disponible"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+    </TableRow>
+
+
+    <ListView
+
+        android:id="@+id/maliste"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+    </ListView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black">
+
+
+        <Button
+            android:text="home"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:text="account"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:text="add"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:text="search"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+
+</LinearLayout>
