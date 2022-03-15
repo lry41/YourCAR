@@ -18,15 +18,20 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AlertDialogLayout;
 import androidx.biometric.BiometricManager;
 import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
 
+
+//import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.yourcar.R;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.concurrent.Executor;
 
@@ -108,7 +113,7 @@ public class LoginController extends AppCompatActivity {
             public void onAuthenticationSucceeded(
                     @NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                startActivity(new Intent(LoginController.this, SearchCarController.class ));
+                startActivity(new Intent(LoginController.this, ControllerAllApplication.class ));
                 Toast.makeText(getApplicationContext(),
                         "Authentication succeeded!", Toast.LENGTH_SHORT).show();
             }
@@ -121,11 +126,11 @@ public class LoginController extends AppCompatActivity {
                         .show();
             }
         });
-
+        String string = getString(android.R.string.cancel);
         promptInfo = new BiometricPrompt.PromptInfo.Builder()
-                .setTitle("Biometric login for my app")
-                .setSubtitle("Log in using your biometric credential")
-                .setNegativeButtonText("Use account password")
+                .setTitle(getString(R.string.empreinteTitle))
+                .setSubtitle(getString(R.string.empreinteTitle2))
+                .setNegativeButtonText(getString(R.string.empreinteNegativBtn))
                 .build();
 
 
@@ -153,9 +158,10 @@ public class LoginController extends AppCompatActivity {
         skipCo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent searchCarWitoutCo = new Intent(LoginController.this, SearchCarController.class);
-                startActivity(searchCarWitoutCo);
+                Intent searchCarWitoutCo = new Intent(LoginController.this, ControllerAllApplication.class);
 
+                startActivity(searchCarWitoutCo);
+              // Animatoo.animateSlideDown(LoginController.this);
             }
 
         });
@@ -170,20 +176,20 @@ Log.d("test","bouton marche");
                 String passwordText = password.getText().toString().trim();
 
                 if(emailText.isEmpty()){
-                    email.setError("Veuillez renseigner votre email");
+                    email.setError(getString(R.string.emailvide));
 
                     email.requestFocus();
                     return;
 
                 }
                 if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()){
-                    email.setError("votre email n'est pas conforme");
+                    email.setError(getString(R.string.emailpasConforme));
                     email.requestFocus();
                     return;
                 }
 
                 if(passwordText.isEmpty()){
-                    password.setError("Veuillez renseigner votre mot de passe");
+                    password.setError(getString(R.string.mdpvide));
                     password.requestFocus();
                     return;
                 }
@@ -194,13 +200,16 @@ Log.d("test","bouton marche");
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                                     if(task.isSuccessful()){
-                                        Toast.makeText(LoginController.this,"Connection réussi !",Toast.LENGTH_LONG).show();
+                                        Toast.makeText(LoginController.this,getString(R.string.reussiteCo),Toast.LENGTH_LONG).show();
                                         erreurlog.setText("");
-                                       startActivity(new Intent(LoginController.this, SearchCarController.class ));
+                                        FirebaseUser user = mAuth.getCurrentUser();
+                                       // updateUI(user);
+                                       startActivity(new Intent(LoginController.this, ControllerAllApplication.class ));
 
                                     }
                                     else{
-                                        Toast.makeText(LoginController.this,"echec de la connection !",Toast.LENGTH_LONG).show();
+                                        Toast.makeText(LoginController.this,getString(R.string.echecCo),Toast.LENGTH_LONG).show();
+                                        erreurlog.setText(getString(R.string.echecCo));
                                         Log.d("test","erro");
                                     }
                     }

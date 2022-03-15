@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YourCar</string>
+    <string name="voiture_disponible">Available Cars</string>
+    <string name="details">Details</string>
+    <string name="ou">Or</string>
+    <string name="numerodetelephone">+33 06 06 41 10 41</string>
+    <string name="mot_de_passe">Password</string>
+    <string name="home">Home</string>
+    <string name="ajout">Add</string>
+    <string name="profil">Profile</string>
+    <string name="filtres">Filters</string>
+    <string name="annuler">Cancel</string>
+    <string name="appliquer">Apply</string>
+    <string name="moins_de_30_000km">less than 30 000km</string>
+    <string name="moins_de_100_000km">less than 100 000km</string>
+    <string name="moins_de_200_000km">less than 200 000km</string>
+    <string name="pas_de_limite_de_km">no Km limit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empreinteTitle">Use Biometric authentification</string>
+    <string name="empreinteTitle2">Connect using your fingerprint</string>
+    <string name="empreinteNegativBtn">Connect via email</string>
+    <string name="emailpasConforme">Please write your email</string>
+    <string name="mdpvide">Please add your password</string>
+    <string name="emailvide">Please add your email</string>
+    <string name="echecCo">Invalid email or password</string>
+    <string name="nomVide">Please add your lastname</string>
+    <string name="prenomVide">Please add your firstname</string>
+    <string name="numVide">Please add your phone number</string>
+    <string name="mdptaille">You need at least 6 characters for your email</string>
+    <string name="userCreer">User created !</string>
+    <string name="userEchec">An error occurred</string>
+    <string name="reussiteCo">You\'re Connected !</string>
+    <string name="AjouterCar">Publish your post</string>
+    <string name="marque">Car constructor</string>
+    <string name="modele">Model</string>
+    <string name="modele_du_vehicule">Car Model</string>
+    <string name="kilometrage">Mileage</string>
+    <string name="chevaux_du_vehicule">Horse Power</string>
+    <string name="annee_du_vehicule">Model Year</string>
+    <string name="Ajouterphoto">Add an image</string>
+    <string name="perssionNon">Permission denied</string>
+    <string name="valider_goto2">Apply</string>
+    <string name="etape1">Step ½</string>
+    <string name="etape2">Step 2/2</string>
+    <string name="listeOffres">You already contacted the following offers :</string>
+    <string name="modeleVide">Please add the model</string>
+    <string name="marqueVide">Please add the brand</string>
+    <string name="anneevide">Please add the year</string>
+    <string name="kmVide">Please add the mileage</string>
+    <string name="anneeNon">Year not valid</string>
+    <string name="prix">Price</string>
+    <string name="seDeco">Log out</string>
+    <string name="deco">You re being logged out</string>
+    <string name="reussiteSMS">Your message have been sent</string>
+    <string name="pasCo">You re not connected</string>
+    <string name="pasCoView">You re not conneted</string>
+    <string name="seCo">Log in</string>
+    <string name="dejaCo">You re being logged in</string>
+    <string name="AnnonceCreer">Your post have been created</string>
+
+
+    <!--bottom Navigation-->
+
+</resources>

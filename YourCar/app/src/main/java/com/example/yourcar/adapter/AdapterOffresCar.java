@@ -23,14 +23,6 @@ public class AdapterOffresCar extends RecyclerView.Adapter<AdapterOffresCar.MyVi
     Context context;
     private RecyclerViewClickListener listener ;
 
-
-    /*public AdapterOffresCar(Context context, ArrayList<Car> carlist) {
-        this.context = context;
-        this.carList = carlist;
-    }
-*/
-
-
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView marque,model,kilometrage,annee,prix;
         ImageView imgCar;
@@ -42,6 +34,7 @@ public class AdapterOffresCar extends RecyclerView.Adapter<AdapterOffresCar.MyVi
             annee= view.findViewById(R.id.offresannee);
             kilometrage= view.findViewById(R.id.offreskilometrage);
             imgCar= view.findViewById(R.id.imgCar);
+
             view.setOnClickListener(this);
         }
 
@@ -54,6 +47,7 @@ public class AdapterOffresCar extends RecyclerView.Adapter<AdapterOffresCar.MyVi
         this.carList = carList;
         this.listener=listener;
     }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -62,6 +56,7 @@ public class AdapterOffresCar extends RecyclerView.Adapter<AdapterOffresCar.MyVi
         return new MyViewHolder(itemView);
     }
 
+    //AFFICHER LES DONNEES DE FIREBASE
    @SuppressLint("SetTextI18n")
    public void onBindViewHolder(MyViewHolder holder, int position) {
         Car car = carList.get(position);
@@ -71,19 +66,19 @@ public class AdapterOffresCar extends RecyclerView.Adapter<AdapterOffresCar.MyVi
         holder.prix.setText(car.getPrix()+"€");
         holder.kilometrage.setText(car.getKilometrage()+"km");
 
-       Glide.with(holder.imgCar.getContext()).load(car.getCarburant()).into(holder.imgCar); //url de l'image mais constructeur oblige appeler carburant et non varUrl
+       Glide.with(holder.imgCar.getContext()).load(car.getUrl()).into(holder.imgCar); //Resolu
     }
 
     public int getItemCount() {
         return carList.size();
 
     }
-
+    //REAGIR AU CLICK SUR UNE OFFRES
     public interface RecyclerViewClickListener{
         void OnClick(View v, int position);
     }
 
-//SEARCHBAR
+//SEARCHBAR AND FILTER
    public void filterList(List<Car> filteredList) {
         carList=filteredList;
         notifyDataSetChanged();

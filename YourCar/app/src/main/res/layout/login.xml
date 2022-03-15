@@ -11,11 +11,11 @@
         android:id="@+id/view"
         android:layout_width="398dp"
         android:layout_height="808dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/button_ronder"
         android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
@@ -69,7 +69,6 @@
     <TextView
         android:id="@+id/erreurLogin"
         android:textColor="@color/red"
-        android:text="erreur"
         android:layout_marginBottom="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

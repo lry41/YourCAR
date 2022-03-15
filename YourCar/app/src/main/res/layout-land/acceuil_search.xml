@@ -1,114 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="5dp"
     android:background="@color/grey"
-    android:orientation="vertical" >
+    android:orientation="vertical"
 
-    <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dip"
-        >
-        <TextView
-            android:layout_marginTop="15dp"
-            android:text="@string/app_name"
-            android:textSize="33sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+    tools:context=".controller.SearchCarController">
+
+
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:outlineSpotShadowColor="@color/black"
+            android:padding="5dip">
+
+            <SearchView
+                android:id="@+id/searchCar"
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_view"
+
+                />
+
+            <Button
+                android:id="@+id/buttonfilter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/filter">
+
+            </Button>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="20dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
 
+            <TextView
+                android:id="@+id/editText1"
+                android:layout_span="1"
+                android:text="@string/voiture_disponible"
+                android:textColor="@color/black"
+                android:textSize="20sp">
 
-        </TextView>
-
-        <ImageView
-            android:id="@+id/imguser"
-            android:src="@drawable/user"
-            android:layout_height="60dp"
-            android:layout_width="60dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="460dp"
-            android:contentDescription="account"><!--optimisiable-->
+            </TextView>
 
 
-        </ImageView>
+        </TableRow>
 
 
-    </TableRow>
-
-    <TableRow
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:id="@+id/tableRow2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dip" >
-
-        <Button
-
-            android:layout_span="1"
-            android:text="Filtres">
-
-        </Button>
-
-
-
-    </TableRow>
-
-    <TableRow
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:id="@+id/tableRow3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dip"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:id="@+id/editText1"
-            android:layout_span="1"
-            android:text="@string/voiture_disponible"
-            android:textColor="@color/black"
-            android:textSize="20sp">
-
-        </TextView>
-
-
-    </TableRow>
-
-
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/maliste"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="188dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
 
-    </ListView>
+    </androidx.recyclerview.widget.RecyclerView>
 
-    <TableRow
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="51dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/black">
-
-
-        <Button
-            android:text="home"
-            android:layout_width="wrap_content"/>
-        <Button
-            android:text="account"
-            android:layout_width="wrap_content"/>
-        <Button
-            android:text="add"
-            android:layout_width="wrap_content"/>
-        <Button
-            android:text="search"
-            android:layout_width="wrap_content"/>
-    </TableRow>
+        android:layout_marginTop="5dp"
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="MissingConstraints"
+        />
 
 </LinearLayout>
+
+
+
+
+
+

@@ -8,9 +8,9 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="407dp"
-        android:layout_height="507dp"
-        android:layout_marginBottom="368dp"
+        android:layout_width="395dp"
+        android:layout_height="478dp"
+        android:layout_marginBottom="388dp"
         android:background="@drawable/button_ronder"
         android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +50,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoView"
         android:layout_width="72dp"
         android:layout_height="67dp"
         android:layout_marginStart="200dp"
@@ -58,10 +58,10 @@
         android:src="@drawable/logoaudi"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152"
+        app:layout_constraintVertical_bias="0.169"
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="GeoLry41 "
+        android:text="GeoLry41"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,21 +94,21 @@
 
     <Button
         android:id="@+id/btReserver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#40c4ff"
+        android:layout_width="225dp"
+        android:layout_height="82dp"
         android:text="Réservez"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="804dp"
+        app:backgroundTint="@color/blue"
+        android:background="@drawable/button_ronder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_carac"
-        android:layout_width="356dp"
-        android:layout_height="166dp"
+        android:layout_width="386dp"
+        android:layout_height="123dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,5 +118,31 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="383dp"
+        android:layout_height="151dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <TextView
+        android:id="@+id/prix"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

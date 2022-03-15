@@ -41,7 +41,6 @@ public class InscriptionController extends AppCompatActivity {
         EditText numeroTel  = findViewById(R.id.phoneNumber);
         Button inscription = findViewById(R.id.inscription);
 
-        TextView erreurInscr= findViewById(R.id.ErreurInscr);
 
         ImageButton goToConnection = findViewById(R.id.goToConnection);
         mAuth = FirebaseAuth.getInstance();
@@ -57,37 +56,37 @@ public class InscriptionController extends AppCompatActivity {
                 String numTelText= numeroTel.getText().toString().trim();
 
                 if (nomText.isEmpty()){
-                    nom.setError("veuillez rentrez votre prénom");
+                    nom.setError(getString(R.string.nomVide));
                     nom.requestFocus();
                     return;
                 }
                 if (prenomText.isEmpty()){
-                    prenom.setError("veuillez rentrez votre nom");
+                    prenom.setError(getString(R.string.prenomVide));
                     prenom.requestFocus();
                     return;
                 }
                 if (emailText.isEmpty()){
-                    email.setError("veuillez rentrez votre email");
+                    email.setError(getString(R.string.emailvide));
                     email.requestFocus();
                     return;
                 }
                 if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()){
-                    email.setError("votre email n'est pas conforme");
+                    email.setError(getString(R.string.emailpasConforme));
                     email.requestFocus();
                     return;
                 }
                 if (numTelText.isEmpty()){
-                    numeroTel.setError("veuillez rentrez votre numéro");
+                    numeroTel.setError(getString(R.string.numVide));
                     numeroTel.requestFocus();
                     return;
                 }
                 if (passwordText.isEmpty()){
-                    password.setError("veuillez rentrez votre mot de passe");
+                    password.setError(getString(R.string.mdpvide));
                     password.requestFocus();
                     return;
                 }
                 if (passwordText.length()<6){
-                    password.setError("6 charactères minimum pour le mot de passe");
+                    password.setError(getString(R.string.mdptaille));
                     password.requestFocus();
                     return;
                 }
@@ -101,11 +100,12 @@ public class InscriptionController extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
-                                        Toast.makeText(InscriptionController.this,"l'user a bien été créer !",Toast.LENGTH_LONG).show();
-                                        erreurInscr.setText("");
+                                        Toast.makeText(InscriptionController.this,getString(R.string.userCreer),Toast.LENGTH_LONG).show();
+                                        Intent connection = new Intent(InscriptionController.this, LoginController.class);
+                                        startActivity(connection);
                                     }
                                     else{
-                                        Toast.makeText(InscriptionController.this,"echec de l'inscription !",Toast.LENGTH_LONG).show();
+                                        Toast.makeText(InscriptionController.this,getString(R.string.userEchec),Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
@@ -129,7 +129,6 @@ public class InscriptionController extends AppCompatActivity {
 
                 Intent connection = new Intent(InscriptionController.this, LoginController.class);
                 startActivity(connection);
-
 
             }
 

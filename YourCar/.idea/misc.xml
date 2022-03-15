@@ -13,24 +13,38 @@
         <entry key="app/src/main/res/drawable/ic_house.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.101" />
         <entry key="app/src/main/res/drawable/search_view.xml" value="0.106" />
+        <entry key="app/src/main/res/drawable/style_text_view.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-land/acceuil_search.xml" value="0.15818725951261223" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.30364583333333334" />
+        <entry key="app/src/main/res/layout-land/appercu_vehicule.xml" value="0.390625" />
+        <entry key="app/src/main/res/layout-land/home.xml" value="0.390625" />
+        <entry key="app/src/main/res/layout-land/inscription.xml" value="0.390625" />
+        <entry key="app/src/main/res/layout-land/login.xml" value="0.390625" />
         <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.232421875" />
         <entry key="app/src/main/res/layout-v21/login.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/acceuil_search.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/acceuil_search.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24740944720329122" />
+        <entry key="app/src/main/res/layout/add_car.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/add_photo.xml" value="0.125" />
         <entry key="app/src/main/res/layout/add_publication.xml" value="0.2543822146216332" />
-        <entry key="app/src/main/res/layout/appercu_vehicule.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/allapplication.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/appercu_vehicule.xml" value="0.25" />
         <entry key="app/src/main/res/layout/caracteristique.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/caracteristiques.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/connexion_succes.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/dialog.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_profil.xml" value="0.1780821917808219" />
         <entry key="app/src/main/res/layout/home.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/inscription.xml" value="0.2668374633789063" />
-        <entry key="app/src/main/res/layout/login.xml" value="0.24072265625000006" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.2913619995117188" />
+        <entry key="app/src/main/res/layout/mainlayout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/menu.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/offres.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/profil.xml" value="0.206024169921875" />
         <entry key="app/src/main/res/layout/test.xml" value="0.19153484395040615" />
         <entry key="app/src/main/res/menu/bottomNavigationView.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26" />
       </map>
     </option>
   </component>

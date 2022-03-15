@@ -6,88 +6,81 @@
     android:layout_height="match_parent"
     android:paddingTop="5dp"
     android:background="@color/grey"
-    android:orientation="vertical" >
+    android:orientation="vertical"
 
-    <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:outlineSpotShadowColor="@color/black"
-        android:padding="5dip">
+    tools:context=".controller.SearchCarController">
 
-        <SearchView
-            android:id="@+id/searchCar"
-            android:layout_width="325dp"
+
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:outlineSpotShadowColor="@color/black"
+            android:padding="5dip">
+
+            <SearchView
+                android:id="@+id/searchCar"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_view"
+
+                />
+
+            <Button
+                android:id="@+id/buttonfilter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/filter">
+
+            </Button>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/search_view"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
-            />
+            <TextView
+                android:id="@+id/editText1"
+                android:layout_span="1"
+                android:text="@string/voiture_disponible"
+                android:textColor="@color/black"
+                android:textSize="20sp">
 
-        <Button
-            android:id="@+id/buttonfilter"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/filter">
-
-        </Button>
-
-    </TableRow>
+            </TextView>
 
 
-
-    <TableRow
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:id="@+id/tableRow3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dip"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:id="@+id/editText1"
-            android:layout_span="1"
-            android:text="@string/voiture_disponible"
-            android:textColor="@color/black"
-            android:textSize="20sp">
-
-        </TextView>
-
-
-    </TableRow>
+        </TableRow>
 
 
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/maliste"
         android:layout_width="match_parent"
-        android:layout_height="568dp"
+        android:layout_height="567dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 
-  <!--  <fragment
-        android:layout_marginTop="40dp"
-        android:id="@+id/fragment_main"
-        android:name="com.example.yourcar.controller.SearchCarController"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        tools:ignore="Instantiatable" />-->
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/bottomNavigation"
-    android:layout_width="match_parent"
-    android:layout_height="51dp"
-    android:layout_marginTop="5dp"
-
-        app:menu="@menu/bottom_navigation"
-    tools:ignore="MissingConstraints"
-        />
 
 
 
 </LinearLayout>
+
+
+
+
+
+

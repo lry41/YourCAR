@@ -8,6 +8,56 @@
     <string name="home">acceuil</string>
     <string name="ajout">ajout</string>
     <string name="profil">profil</string>
+    <string name="filtres">Filtres</string>
+    <string name="annuler">annuler</string>
+    <string name="appliquer">appliquer</string>
+    <string name="moins_de_30_000km">moins de 30 000km</string>
+    <string name="moins_de_100_000km">moins de 100 000km</string>
+    <string name="moins_de_200_000km">moins de 200 000km</string>
+    <string name="pas_de_limite_de_km">pas de limite de km.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empreinteTitle">Authentification via l\'empreinte</string>
+    <string name="empreinteTitle2">Connectez vous avec votre empreinte</string>
+    <string name="empreinteNegativBtn">se connecter avec son email.</string>
+    <string name="emailpasConforme">veuillez saisir un email</string>
+    <string name="mdpvide">veuillez renseigner votre mot de passe</string>
+    <string name="emailvide">veuillez renseigner votre email</string>
+    <string name="echecCo">Votre mot de passe ou votre email est incorrect !</string>
+    <string name="nomVide">veuillez renseigner votre nom</string>
+    <string name="prenomVide">veuillez renseigner votre prénom</string>
+    <string name="numVide">veuillez renseigner votre numéro de téléphone</string>
+    <string name="mdptaille">il faut au moins 6 charactère pour votre mot de passz</string>
+    <string name="userCreer">L\'user a bien été créer</string>
+    <string name="userEchec">Une erreur est survenue.</string>
+    <string name="reussiteCo">Connexion réussi !</string>
+    <string name="AjouterCar">Poster votre annonce</string>
+    <string name="marque">marque du véhicule</string>
+    <string name="modele">modèle</string>
+    <string name="modele_du_vehicule">Modèle du véhicule</string>
+    <string name="kilometrage">Kilometrage</string>
+    <string name="chevaux_du_vehicule">chevaux du véhicule</string>
+    <string name="annee_du_vehicule">annee du vehicule</string>
+    <string name="Ajouterphoto">Ajouter une photo</string>
+    <string name="perssionNon">permission refusée..</string>
+    <string name="valider_goto2">suivant</string>
+    <string name="etape1">Etape 1/2</string>
+    <string name="etape2">Etape 2/2</string>
+    <string name="listeOffres">Offres déjà contacté</string>
+    <string name="modeleVide">veuillez renseigné le modele</string>
+    <string name="marqueVide">veuillez renseigner la marque</string>
+    <string name="anneevide">veuillez renseigner l\'annee</string>
+    <string name="kmVide">veuillez renseigner le kilometrage</string>
+    <string name="anneeNon">l\'annee rensignée n\'est pas valable</string>
+    <string name="prix">prix</string>
+    <string name="reussiteSMS">votre message a bien été envoyé</string>
+    <string name="seDeco">Se déconnecté</string>
+    <string name="deco">Vous êtes maintenant déconnecté !</string>
+    <string name="pasCo">Vous n\'êtes pas connecté</string>
+    <string name="pasCoView">vous n\'êtes pas connecté</string>
+    <string name="seCo">se connecter</string>
+    <string name="dejaCo">vous êtes deja connecté !</string>
+    <string name="AnnonceCreer">Votre annonce a été crée</string>
 
 
     <!--bottom Navigation-->

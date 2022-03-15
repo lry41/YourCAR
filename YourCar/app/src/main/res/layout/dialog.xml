@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/filterMarque"
+        android:layout_width="189dp"
+        android:layout_height="207dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radioButtonAudi"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+
+            android:checked="false"
+            android:text="audi"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBmw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="bmw"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMercedes"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+
+            android:checked="false"
+            android:text="mercedes"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPorsche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="porsche"
+            android:textSize="15dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/filterKm"
+        android:layout_width="191dp"
+        android:layout_height="209dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toEndOf="@+id/filterMarque"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/moins30000km"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+
+            android:checked="false"
+            android:text="@string/moins_de_30_000km"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/moins100000km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="@string/moins_de_100_000km"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/moins200000km"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+
+            android:checked="false"
+            android:text="@string/moins_de_200_000km"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/plus200000km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="@string/pas_de_limite_de_km"
+            android:textSize="15dp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

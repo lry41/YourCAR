@@ -39,11 +39,11 @@ public class AdapterCaracCar extends RecyclerView.Adapter<AdapterCaracCar.MyView
 
             //ON AURA UN PROBLEME À AMELIORER
 
-            if(position==0)holder.caracBlockText.setText(caracList.get(0) + "€");
-            else if (position == 1) holder.caracBlockText.setText(caracList.get(1) + "chv");
-            else if (position == 2) holder.caracBlockText.setText(caracList.get(2) + "km");
-            else if (position == 3) holder.caracBlockText.setText(caracList.get(3) + "");
 
+             if (position == 0) holder.caracBlockText.setText(caracList.get(0) + "chv");
+            else if (position == 1) holder.caracBlockText.setText(caracList.get(1) + "km");
+            else if (position == 2) holder.caracBlockText.setText(caracList.get(2) + "");
+             else if (position == 3) holder.caracBlockText.setText(caracList.get(3) + "");
         /*switch (position){
             case 0:  holder.caracBlockText.setText(car.getChevaux()+"chv");
 
